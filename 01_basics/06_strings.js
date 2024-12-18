@@ -27,3 +27,6 @@ const address = 'Samrat-Nagar-Ward-3';
 console.log(address.split("-"));
 
 // Split gives you array
+
+let str = 'Tanishq';
+console.log(str.split('').reverse().join(''));
