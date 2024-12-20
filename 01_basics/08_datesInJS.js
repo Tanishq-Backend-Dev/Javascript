@@ -1,25 +1,26 @@
-// Date is a object 
+// The datatype of Date() is object.
 
 let myDate = new Date();
-// console.log(myDate);
-// console.log(myDate.toString());
-// console.log(myDate.toLocaleString()); //Date and Time in readable format
-// console.log(myDate.toISOString());
-// console.log(myDate.toJSON());
-// console.log(myDate.toUTCString());
-// console.log(myDate.toLocaleDateString()); // Onle Date
+console.log(myDate); 
+console.log(myDate.toString());
+console.log(myDate.toLocaleString()); // Readable output containing date and time
+console.log(myDate.toLocaleDateString()); // Only date
 
-// let myCreatedDate = new Date(2024,11,20);
-let myCreatedDate = new Date("2024-12-20");
-// console.log(myCreatedDate.toLocaleString());
+// let myCreateDate = new Date("2024-12-20");
+let myCreateDate = new Date("2024-12-20");
+console.log(myCreateDate.toLocaleString());
+
 
 let myTimeStamp = Date.now();
-// console.log(myTimeStamp);
-//console.log(myCreatedDate.getTime());
+console.log(myTimeStamp);
 
-let newDate =  new Date();
-console.log(newDate.getDay());
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getFullYear());
 
-console.log(newDate.toLocaleString('default',{
+console.log(`Today's day is ${newDate.getDay()} and year is ${newDate.getFullYear()}`);
+
+console.log(newDate.toLocaleString('default', {
     weekday: "long"
 }));
